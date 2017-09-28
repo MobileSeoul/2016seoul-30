@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경조사의 중요도"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="본인에게 해당하는 내용을 선택(복수선택 가능)하세요."
+                android:paddingTop="20dp" />
+            <CheckBox
+                android:id="@+id/cb_a"
+                android:text="나는 이 경조사에 참석하는 시간이 아깝다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:text="나는 초대손님 중 없어도 그만인 사람이다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_b" />
+            <CheckBox
+                android:text="나는 대상자를 진심으로 축하/위로 해주고 싶다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_c" />
+            <CheckBox
+                android:text="나는 그저 대상자가 내 경조사에 참석할 것을 염두에 두고 이 경조사에 참석한다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_d" />
+            <CheckBox
+                android:text="대상자는 나의 개인사를 조금이라도 알고 있다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_e" />
+            <CheckBox
+                android:text="대상자는 평소 연락도 없던 사람이다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_f" />
+            <CheckBox
+                android:text="나는 이 경조사 주소지가 너무 멀거나 교통이 불편하다고 생각한다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_g" />
+            <CheckBox
+                android:text="대상자는 나의 경조사에 참석한 사람이다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_h" />
+            <CheckBox
+                android:text="나는 이 경조사에서 같이 밥 먹을 사람도 없다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_i" />
+            <CheckBox
+                android:text="이 경조사는 업무처럼 느껴지는 경조사다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_j" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_gravity="center"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

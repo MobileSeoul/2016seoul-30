@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자와 경조사비 대상자 간 관계"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:id = "@+id/rg_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관계"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가족(비동거 중일 경우 포함)"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id = "@+id/rb_a_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(증)조부모"
+                    android:hint="가족" />
+                <RadioButton
+                    android:id = "@+id/rb_a_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배우자"
+                    android:hint="가족"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부모"
+                    android:hint="가족"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="형제자매"
+                    android:hint="가족"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자녀"
+                    android:hint="가족"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(증)손주"
+                    android:hint="가족"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="친척"
+                    android:paddingTop="20dp"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사촌 이내"
+                    android:hint="친척"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타"
+                    android:hint="친척"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="친구(선후배 포함)"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id = "@+id/rb_a_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="학교"
+                    android:hint="친구"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동네"
+                    android:hint="친구"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="애인"
+                    android:hint="친구"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종교"
+                    android:hint="친구"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사회"
+                    android:hint="친구"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타"
+                    android:hint="친구"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(전)직장동료"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id = "@+id/rb_a_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동기"
+                    android:hint="(전)직장동료"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선배"
+                    android:hint="(전)직장동료"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="후배"
+                    android:hint="(전)직장동료"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="직업상의 지인"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id = "@+id/rb_a_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래업체"
+                    android:hint="직업상의 지인"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고객"
+                    android:hint="직업상의 지인"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타 지인"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id = "@+id/rb_a_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스승"
+                    android:hint="기타 지인"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제자"
+                    android:hint="기타 지인"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이웃"
+                    android:hint="기타 지인"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종교"
+                    android:hint="기타 지인"/>
+                <RadioButton
+                    android:id = "@+id/rb_a_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타"
+                    android:hint="기타 지인"/>
+
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_gravity="center"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

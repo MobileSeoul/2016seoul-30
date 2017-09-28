@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+            <TextView
+                android:id="@+id/tv_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경조사 정보"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tv_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 경조사의 당사자 \n(예:'친구 부모님의 생신잔치'라면 부모 선택)"
+                android:paddingTop="20dp" />
+            <RadioGroup
+                android:id="@+id/rg_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="경조사의 당사자"
+                android:gravity="left">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="본인" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배우자" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(증)조부모" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부모" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="형제" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자녀" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tv_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 경조사 정보"
+                android:paddingTop="20dp" />
+            <RadioGroup
+                android:id="@+id/rg_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="경조사 정보"
+                android:gravity="left">
+                <RadioButton
+                    android:id="@+id/rb_b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결혼" />
+                <RadioButton
+                    android:id="@+id/rb_b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="장례" />
+                <RadioButton
+                    android:id="@+id/rb_b_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회갑연, 고희연 등 어르신 생신잔치" />
+                <RadioButton
+                    android:id="@+id/rb_b_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="백일" />
+                <RadioButton
+                    android:id="@+id/rb_b_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="돌" />
+                <RadioButton
+                    android:id="@+id/rb_b_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="집들이" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tv_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_gravity="center"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

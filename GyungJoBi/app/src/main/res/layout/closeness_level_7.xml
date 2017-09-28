@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대상자와의 친밀도"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:id="@+id/rg_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문항"
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 나는 대상자와 언제든지 통화할 수 있다."
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id="@+id/rb_a_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예" />
+                <RadioButton
+                    android:id="@+id/rb_a_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니오" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_b_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문항"
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 지난 1년간 대상자와의 연락 횟수"
+                    android:paddingTop="20dp" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0회" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1~2회" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3~4회" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5~6회" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7~9회" />
+                <RadioButton
+                    android:id="@+id/rb_b_1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10회 이상" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_gravity="center"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

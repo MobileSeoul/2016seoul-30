@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자 기본정보"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 소득 유무"
+                android:paddingTop="20dp" />
+            <RadioGroup
+                android:id="@+id/rg_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="직업"
+                android:gravity="left">
+                <RadioButton
+                    android:id="@+id/rb_a_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유(아르바이트 포함)" />
+                <RadioButton
+                    android:id="@+id/rb_a_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="무" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 연 수익(용돈 포함)"
+                android:paddingTop="20dp" />
+            <RadioGroup
+                android:id="@+id/rg_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연봉"
+                android:gravity="left">
+                <RadioButton
+                    android:id="@+id/rb_b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0~2,000만원대" />
+                <RadioButton
+                    android:id="@+id/rb_b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,000만원대~4,000만원대" />
+                <RadioButton
+                    android:id="@+id/rb_b_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5,000만원대~7,000만원대" />
+                <RadioButton
+                    android:id="@+id/rb_b_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8,000만원대~9,000만원대"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_b_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1억원 이상" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_gravity="center"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
